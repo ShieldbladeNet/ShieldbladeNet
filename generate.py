@@ -10,14 +10,8 @@ f.write(f'''
 <p align="center">
   <a href="https://github.com/{nameid}">
     <img alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username={nameid}&hide=issues&hide_title=true&include_all_commits=true&bg_color=30,e96443,904e95&title_color=fff&text_color=fff" />
-    </a>
-</p>
-<p align="center">
-
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/{nameid}/Nano-Openwrt?style=for-the-badge&label=Download)](https://github.com/{nameid}/Nano-Openwrt/releases)
-
-</p>       
-
+    </a>     
+    
 <p align="center">
 
 [![build_firmware](https://github.com/{nameid}/Nano-Openwrt/actions/workflows/build-firmware.yml/badge.svg)](https://github.com/{nameid}/Nano-Openwrt/actions/workflows/build-firmware.yml)
@@ -27,7 +21,9 @@ f.write(f'''
 # Nano R1S R2S R4S x86 Openwrt 
  
 ### Download Link：
-https://github.com/{nameid}/Nano-Openwrt/releases  
+
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/{nameid}/Nano-Openwrt?style=for-the-badge&label=Download)](https://github.com/{nameid}/Nano-Openwrt/releases) 
+
 (Files do not need to be decompressed, you can directly use the flashing tool to flash in img.gz)
 
 ### Use suggestions:
@@ -44,23 +40,6 @@ slim Version
 wget -qO- https://github.com/{nameid}/Nano-Openwrt/raw/main/scripts/autoupdate.sh | ver=-slim sh
 ```
 (Script provided by Gary Lau, thank you very much!)
-
-### Firmware features:
--The slim version firmware has only the OpenWrt body, but it has a built-in "local software source", which contains most of the commonly used plug-ins. Those who don't like the firmware pre-installed complicated plug-ins can choose this version and enter the background software package to install the required plug-ins
--Using the ext4 file system, you can use the partition tool to expand the root partition of the SD card to the maximum after swiping the card
--Support USB wireless network card (RTL8821CU chip, such as COMFAST 811AC), which can drive the wireless network card to run in the 5G frequency band
--When using [online upgrade] (#online upgrade method in terminal), the root partition will automatically expand, which is convenient for tossing
-
-### Generate the firmware you need in 1 minute
-Because this project is pre-compiled with Image builder, it only takes 1-3 minutes to generate the firmware. If you are interested in customizing the firmware, you can Fork this project and edit the config.seed file corresponding to the device, such as r2s.config.seed, and delete it (delete the entire line) ) Unneeded luci app software package configuration line, add the software you need, the list of available software can be obtained at the output of the github actions component, for example
-
-<img src="https://user-images.githubusercontent.com/56048681/114531174-3beafb80-9c7e-11eb-8bcc-b098c3b1cee8.png" width="250" />
-
-After completion, enter Actions, click Build on the left, and click Run workflow on the right to enter the device name (r2s/r4s/r1s/r1s-h3/r1p)
-
-<img src="https://user-images.githubusercontent.com/56048681/114531768-c7648c80-9c7e-11eb-8d72-fe38f9df960d.png" width="250" />
-
-Then click Run to get the firmware you need
 
 #### Firmware source code:
 https://github.com/immortalwrt/immortalwrt
