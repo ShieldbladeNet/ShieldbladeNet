@@ -1,10 +1,11 @@
 import requests, json, random, time
 timestr = time.strftime("%Y%m%d-%H%M%S")
+timestr2 = time.strtime
 f = open("./README.md", "w")
 
 f.write(f'''
 
-<h3 align="center"><b>{time}</b></h3>
+<h3 align="center"><b>{timestr2}</b></h3>
 <h3 align="center">Have a nice day!</h3>
 <p align="center">
   <a href="https://github.com/ShieldbladeNet">
