@@ -4,8 +4,7 @@ nameid = "ShieldbladeNet"
 f = open("./README.md", "w")
 
 f.write(f'''
-
-<h3 align="center"><b>{timestr}</b></h3>
+<h3 align="center"><b>Hi My Name {nameid}</b></h3>
 <h3 align="center">Have a nice day!</h3>
 <p align="center">
   <a href="https://github.com/{nameid}">
@@ -44,6 +43,7 @@ wget -qO- https://github.com/{nameid}/Nano-Openwrt/raw/main/scripts/autoupdate.s
 #### Firmware source code:
 https://github.com/immortalwrt/immortalwrt
 
-
+<h3 align="center"><b>This Page Create at</b></h3>
+<h3 align="center"><b>{timestr}</b></h3>
 ''')
 f.close()
