@@ -1,11 +1,11 @@
-import requests, json, random
-
+import requests, json, random, time
+timestr = time.strftime("%Y%m%d-%H%M%S")
 f = open("./README.md", "w")
 pokemon_id = random.randint(1, 151)
 res = requests.get(f'https://pokeapi.co/api/v2/pokemon/{pokemon_id}')
 result = json.loads(res.text)
 f.write(f'''
-
+{timestr}
 <h3 align="center"><b>{result['name'].title()}</b></h3>
 <h3 align="center">Have a nice day!</h3>
 <p align="center">
