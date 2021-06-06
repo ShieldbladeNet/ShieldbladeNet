@@ -1,6 +1,5 @@
 import requests, json, random, time
-timestr = time.strftime("%Y%m%d-%H%M%S")
-timestr2 = time.strtime
+timestr = time.strftime("%Y %m %d - %H:%M:%S UTC")
 f = open("./README.md", "w")
 
 f.write(f'''
