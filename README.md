@@ -39,4 +39,4 @@ wget -qO- https://github.com/ShieldbladeNet/Nano-Openwrt/raw/main/scripts/autoup
 https://github.com/immortalwrt/immortalwrt
 
 <h3 align="center"><b>This Page Create at</b></h3>
-<h3 align="center"><b>2021-06-07 - 04:17:23 UTC</b></h3>
+<h3 align="center"><b>2021-06-07 - 09:57:18 UTC</b></h3>
